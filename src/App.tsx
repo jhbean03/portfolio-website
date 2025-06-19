@@ -1,9 +1,15 @@
 import Navbar from './components/Navbar.tsx'
+import Home from './components/Home.tsx'
+import About from './components/About.tsx'
+import Skills from './components/Skills.tsx'
+import Projects from './components/Projects.tsx'
+import Coursework from './components/Coursework.tsx'
+import Resume from './components/Resume.tsx'
 import { useState } from 'react'
-import portrait from './assets/jackson.jpg'
 
 const App = () => {
   const [theme, setTheme] = useState(true);
+  const [info, setInfo] = useState("home");
 
   if (theme) {
     document.getElementsByTagName("body")[0].className = "bg-slate-100"
@@ -11,23 +17,33 @@ const App = () => {
     document.getElementsByTagName("body")[0].className = "bg-slate-900"
   }
 
+  let page;
+  switch (info) {
+    case "home":
+      page = <Home />;
+      break;
+    case "about":
+      page = <About />
+      break;
+    case "skills":
+      page = <Skills />
+      break;
+    case "projects":
+      page = <Projects />
+      break;
+    case "coursework":
+      page = <Coursework />
+      break;
+    case "resume":
+      page = <Resume />
+      break;
+  }
+
   return (
     <div className={`${theme ? "" : "dark"} text-[20px]`}>
-      <Navbar theme={theme} setTheme={setTheme}/>
-      <div className="flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] rounded-xl p-[2em]">
-        <img src={portrait} className="h-[27rem] w-auto rounded-[15%] object-cover"/>
-        <div className="flex flex-col gap-[2em] p-[1em]">
-          <h1 className="font-[Offside] text-[40px] font-bold">Welcome!</h1>
-          <p>
-            Hi! My name is Jackson, and I am an Honors Computer Science & Engineering (CSE) and Theoretical Mathematics undegraduate at THE Ohio State University!
-            This is my portfolio website which contains more information about my professional goals, my personal interests, my skills, some of the projects I am
-            currently working on and have worked on in the past, and coursework I have completed. The latest version of my resume is included as well if you would
-            like to contact me with any questions regarding my work!
-          </p>
-        </div>
-      </div>
+      <Navbar theme={theme} setTheme={setTheme} setInfo={setInfo}/>
+      {page}
     </div>
-
   )
 }
 

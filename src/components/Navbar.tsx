@@ -4,9 +4,10 @@ import { useState } from 'react'
 interface NavbarProps {
   theme: boolean
   setTheme: Function
+  setInfo: Function
 }
 
-function Navbar({theme, setTheme}: NavbarProps) {
+function Navbar({theme, setTheme, setInfo}: NavbarProps) {
   const [toggleNav, setToggleNav] = useState(true);
 
   return (
@@ -15,11 +16,36 @@ function Navbar({theme, setTheme}: NavbarProps) {
       <ul id="nav-links" className={`flex items-center gap-[1.9rem] text-[20px] font-bold max-lg:absolute max-lg:right-0 max-lg:h-[42em] max-lg:top-[5.4em] 
       max-lg:bg-slate-200 max-lg:dark:bg-slate-800 max-lg:flex-col max-lg:w-[35%] max-lg:transform-[translateX(${toggleNav ? "100%" : "0%" })] 
       max-lg:transition-transform max-lg:duration-500 max-lg:ease-in`}>
-        <li><a href="#about" className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300">About Me</a></li>
-        <li><a href="#skills" className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300">Skills</a></li>
-        <li><a href="#projects" className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300">Projects</a></li>
-        <li><a href="#coursework" className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300">Coursework</a></li>
-        <li><a href="#resume" className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300">Resume</a></li>
+        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+          onClick = { () => {
+            setInfo("home");
+          }}
+        >Home</a></li>
+        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+          onClick = { () => {
+            setInfo("about");
+          }}
+        >About Me</a></li>
+        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+          onClick = { () => {
+            setInfo("skills");
+          }}
+        >Skills</a></li>
+        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+          onClick = { () => {
+            setInfo("projects");
+          }}
+        >Projects</a></li>
+        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+          onClick = { () => {
+            setInfo("coursework");
+          }}
+        >Coursework</a></li>
+        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+          onClick = { () => {
+            setInfo("resume");
+          }}
+        >Resume</a></li>
         <li>
           <button className="p-[0.75rem] bg-slate-300 dark:bg-slate-700 duration-200 hover:bg-slate-400 dark:hover:bg-slate-500 rounded-xl"
             onClick = { () => {
