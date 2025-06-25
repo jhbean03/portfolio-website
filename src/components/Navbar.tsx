@@ -14,7 +14,7 @@ function Navbar({theme, setTheme, setInfo}: NavbarProps) {
     <nav className="flex sticky top-[0] left-[0] z-1 items-center justify-between p-[1.5rem_3.5rem] m-[0] bg-slate-200 dark:bg-slate-800 shadow-[0_3px_5px_rgba(0,_0,_0,_0.3)]">
       <div className="font-[Offside] text-[40px] font-bold text-black dark:text-slate-200">JACKSON BEAN</div>
       <ul id="nav-links" className={`flex items-center gap-[1.9rem] text-[20px] font-bold max-lg:absolute max-lg:right-0 max-lg:h-[42em] max-lg:top-[5.4em] 
-      max-lg:bg-slate-200 max-lg:dark:bg-slate-800 max-lg:flex-col max-lg:w-[35%] max-lg:translate-x-${toggleNav ? "full" : "0"} max-lg:transition-transform max-lg:duration-500 
+      max-lg:bg-slate-200 max-lg:dark:bg-slate-800 max-lg:flex-col max-lg:w-[35%] ${toggleNav ? "max-lg:translate-x-full" : "max-lg:translate-x-0"} max-lg:transition-transform max-lg:duration-500 
       max-lg:ease-in`}>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
