@@ -1,6 +1,6 @@
 function About() {
     return (
-        <div className="flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] rounded-4xl p-[2em]">
+        <div className="flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em]">
             <h1 className="font-[Offside] text-[40px] text-center font-bold">About Me</h1>
             <p>
             As stated above, I am currently working on getting my undergraduate degree (B.S.) in computer science and mathematics at THE Ohio State University, 
