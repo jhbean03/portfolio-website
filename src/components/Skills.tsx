@@ -31,7 +31,7 @@ const LANGS = [
     {icon: rubyLogo, text: "Ruby"},
     {icon: railsLogo, text: "Rails"},
     {icon: matlabLogo, text: "MATLAB"},
-]
+];
 
 const SKILLS = [
     "Data Structures and Algorithms",
@@ -60,7 +60,7 @@ const SKILLS = [
     "Analog Circuits",
     "Personal Computer Building",
     "Makefile"
-]
+];
 
 const renderLangs = () => {
     const langBoxElems: any[] = [];
@@ -80,7 +80,7 @@ const renderSkills = () => {
 
 function Skills() {
     return (
-        <div className="flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em]">
+        <div className="flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
             <h1 className="font-[Offside] text-[40px] text-center font-bold">Skills</h1>
             <p className="text-center">
                 Below is a list of relevant skills, tools, and programming languages I have used throughout my various projects and coursework.
@@ -90,7 +90,7 @@ function Skills() {
                 {renderLangs()}
             </div>
             <h2 className="font-[Offside] text-[24px] text-center font-bold pt-[1em]">General Skills</h2>
-            <div className="grid grid-cols-3 max-lg:grid-cols-1 justify-items-center mt-[-0.5em]">
+            <div className="grid grid-cols-3 max-lg:grid-cols-1 justify-items-center">
                 {renderSkills()}
             </div>
         </div>

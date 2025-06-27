@@ -2,12 +2,19 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-   font-family: "Lato", sans-serif;
+@theme {
+   --animate-fadeIn: fadeIn 1s;
+
+   @keyframes fadeIn {
+      0% {
+         opacity: 0;
+      }
+      100% {
+         opacity: 1;
+      }
+   }
 }
 
-@media screen and (max-width:1024px){
-   body {
-      overflow-x: hidden;
-   }
+:root {
+   font-family: "Lato", sans-serif;
 }
