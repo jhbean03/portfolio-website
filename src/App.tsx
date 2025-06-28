@@ -3,7 +3,7 @@ import Home from './components/Home.tsx'
 import About from './components/About.tsx'
 import Skills from './components/Skills.tsx'
 import Projects from './components/Projects.tsx'
-import Coursework from './components/Coursework.tsx'
+import Experience from './components/Experience.tsx'
 import Resume from './components/Resume.tsx'
 import { useState } from 'react'
 
@@ -31,8 +31,8 @@ const App = () => {
     case "projects":
       page = <Projects />
       break;
-    case "coursework":
-      page = <Coursework />
+    case "experience":
+      page = <Experience />
       break;
     case "resume":
       page = <Resume />

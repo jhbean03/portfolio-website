@@ -1,4 +1,4 @@
-import ProjectBox from "./ProjectBox"
+import ProjectBox from "./ProjectBox.tsx"
 import redesignedPortfolioImg from "../assets/redesignedPortfolio.png"
 import apiImg from "../assets/apiImg.png"
 import travelImg from "../assets/travelImg.png"

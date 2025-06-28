@@ -46,11 +46,11 @@ function Navbar({theme, setTheme, setInfo}: NavbarProps) {
         >Projects</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
-            setInfo("coursework");
+            setInfo("experience");
             setToggleNav(!toggleNav);
             window.scrollTo(0, 0);
           }}
-        >Coursework</a></li>
+        >Experience</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
             setInfo("resume");
