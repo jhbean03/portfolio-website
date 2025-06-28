@@ -20,36 +20,42 @@ function Navbar({theme, setTheme, setInfo}: NavbarProps) {
           onClick = { () => {
             setInfo("home");
             setToggleNav(!toggleNav);
+            window.scrollTo(0, 0);
           }}
         >Home</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
             setInfo("about");
             setToggleNav(!toggleNav);
+            window.scrollTo(0, 0);
           }}
         >About Me</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
             setInfo("skills");
             setToggleNav(!toggleNav);
+            window.scrollTo(0, 0);
           }}
         >Skills</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
             setInfo("projects");
             setToggleNav(!toggleNav);
+            window.scrollTo(0, 0);
           }}
         >Projects</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
             setInfo("coursework");
             setToggleNav(!toggleNav);
+            window.scrollTo(0, 0);
           }}
         >Coursework</a></li>
         <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
           onClick = { () => {
             setInfo("resume");
             setToggleNav(!toggleNav);
+            window.scrollTo(0, 0);
           }}
         >Resume</a></li>
         <li>
