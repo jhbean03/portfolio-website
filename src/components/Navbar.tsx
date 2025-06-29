@@ -61,6 +61,7 @@ function Navbar({theme, setTheme, setInfo}: NavbarProps) {
         <li>
           <button className="p-[0.75rem] bg-slate-300 dark:bg-slate-700 duration-200 hover:bg-slate-400 dark:hover:bg-slate-500 rounded-xl"
             onClick = { () => {
+              theme ? localStorage.setItem("theme", "false") : localStorage.setItem("theme", "true");
               setTheme(!theme);
             }}
           >
@@ -71,7 +72,6 @@ function Navbar({theme, setTheme, setInfo}: NavbarProps) {
       <div className="hidden max-lg:block cursor-pointer"
         onClick = { () => {
           setToggleNav(!toggleNav);
-          console.log(toggleNav);
         }}
       >
         <div className="w-[25px] h-[3px] m-[5px] bg-black dark:bg-slate-200"></div>

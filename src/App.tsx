@@ -7,9 +7,22 @@ import Experience from './components/Experience.tsx'
 import Resume from './components/Resume.tsx'
 import { useState } from 'react'
 
+const getTheme = () => {
+  if (localStorage.getItem("theme") === null || localStorage.getItem("theme") === "true") {
+    return true;
+  } else if (localStorage.getItem("theme") === "false") {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 const App = () => {
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState(getTheme());
   const [info, setInfo] = useState("home");
+
+  console.log(theme);
+  console.log(localStorage.getItem("theme"));
 
   if (theme) {
     document.getElementsByTagName("body")[0].className = "bg-slate-100"
