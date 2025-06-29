@@ -4,11 +4,17 @@ import WorkBox from "./WorkBox.tsx"
 function Experience() {
 
     const RESEARCH_INTERN_POSITIONS = [
-        {title: "Student Instructional Associate", department: "The Ohio State University College of Arts and Sciences", location: "Columbus, OH", date: "August 2024 - Present", 
-            skills: "", descriptionPoints: [
-            "Teach Business Algebra twice a week to 72 students divided into two separate sections",
-            "Answer at least 20 weekly questions about course material in a concise and understandable manner",
-            "Prepare, grade, and proctor 10 weekly quizzes and four monthly exams over semester-long course content"
+        {title: "Cognitive Systems Engineering Researcher", department: "The Ohio State University College of Industrial and Systems Engineering", location: "Columbus, OH", 
+            date: "May 2024 - September 2024", skills: "C++, Visual Studio, Xcode, Python, Cognitive Systems Engineering", descriptionPoints: [
+            "Worked with the Cognitive Systems Engineering Lab (CSEL) to develop two new contingency plans for UAMs",
+            "Developed C++ code to run more than 40 simulations that enacted parameter-determined flight pathing",
+            "Plotted results of simulations on six dynamic charts and graphs using Python with Pyplot Dash"
+        ]},
+        {title: "Biomedical Informatics Researcher", department: "The Ohio State University Department of Biomedical Informatics", location: "Columbus, OH", 
+            date: "May 2023 - August 2023", skills: "Machine Learning, Artificial Intelligence, Python, R, Health Data", descriptionPoints: [
+            "Worked with the Cognitive Systems Engineering Lab (CSEL) to develop two new contingency plans for UAMs",
+            "Developed C++ code to run more than 40 simulations that enacted parameter-determined flight pathing",
+            "Plotted results of simulations on six dynamic charts and graphs using Python with Pyplot Dash"
         ]},
     ]
 
@@ -19,17 +25,29 @@ function Experience() {
             "Answer at least 20 weekly questions about course material in a concise and understandable manner",
             "Prepare, grade, and proctor 10 weekly quizzes and four monthly exams over semester-long course content"
         ]},
-        {title: "Grader", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "January 2025 - May 2025", 
+        {title: "Grader (CSE 2421)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "January 2025 - May 2025", 
             skills: "", descriptionPoints: [
             "Worked as a grader for Systems I (CSE 2421)",
-            "Graded and provided feedback on student programming projects writted in C and AT&T x86 assembly language",
+            "Graded and provided feedback on student programming projects written in C and AT&T x86 assembly language",
             "Held office hours twice a week to answer any questions from students and assist with completiton of programming projects"
         ]},
-        {title: "Undergraduate Teaching Assistant", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "August 2024 - December 2024", 
+        {title: "Teaching Assistant (ENGR 1282.01H)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "August 2024 - December 2024", 
             skills: "", descriptionPoints: [
-            "Worked as an undergraduate teaching assistant for ENGR 1282.01H Lab (Fundamentals of Engineering for Honors I)",
+            "Worked as an undergraduate teaching assistant for Fundamentals of Engineering for Honors I Lab (ENGR 1282.01H)",
             "Helped answer any questions students had with regard to the lab experiences both in-person and through email",
             "Graded various forms of technical communication (lab reports, memos, abstracts) in a thorough and timely manner"
+        ]},
+        {title: "Grader (CSE 2231)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "May 2024 - August 2024", 
+            skills: "", descriptionPoints: [
+            "Worked as a grader for Software II (CSE 2231)",
+            "Graded and provided feedback on student programming projects written in Java",
+            "Held office hours twice a week to answer any questions from students and assist with completiton of programming projects"
+        ]},
+        {title: "Teaching Assistant (ENGR 1182)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "August 2023 - May 2024", 
+            skills: "", descriptionPoints: [
+            "Worked as an undergraduate teaching assistant for ENGR 1182 (Fundamentals of Engineering II)",
+            "Provided important feedback on various graphics assignments and reports submitted by students, helping them to learn more about technical communication",
+            "Graded assignments in a timely manner and helped students to understand the feedback received"
         ]},
     ]
 
@@ -148,6 +166,7 @@ function Experience() {
             </div>
 
             <h2 className="font-[Offside] text-[24px] text-center font-bold">Coursework</h2>
+            <h3 className="text-[18px] text-center font-bold">Cumulative GPA: 4.00/4.00</h3>
             <div className="grid xl:grid-cols-2 max-xl:grid-cols-1 gap-[2em]">
                 {renderSemesters()}
             </div>
