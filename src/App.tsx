@@ -53,7 +53,7 @@ const App = () => {
   }
 
   return (
-    <div className={`${theme ? "" : "dark"} text-[20px]`}>
+    <div className={`${theme ? "" : "dark"} text-[20px] overflow-x-clip`}>
       <Navbar theme={theme} setTheme={setTheme} setInfo={setInfo}/>
       {page}
     </div>
