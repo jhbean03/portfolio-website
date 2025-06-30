@@ -1,5 +1,6 @@
 import { FiMoon, FiSun } from "react-icons/fi";
-import { useState } from 'react'
+import { useState } from 'react';
+import resumePDF from '../assets/ResumeMAIN.pdf'
 
 interface NavbarProps {
   theme: boolean
@@ -51,13 +52,15 @@ function Navbar({theme, setTheme, setInfo}: NavbarProps) {
             window.scrollTo(0, 0);
           }}
         >Experience</a></li>
-        <li><a className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
-          onClick = { () => {
-            setInfo("resume");
-            setToggleNav(!toggleNav);
-            window.scrollTo(0, 0);
-          }}
-        >Resume</a></li>
+        <li>
+          <a href={resumePDF} target="_blank" className="duration-200 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-300 cursor-pointer"
+            onClick = { () => {
+              setToggleNav(!toggleNav);
+            }}
+          >
+            Resume
+          </a>
+        </li>
         <li>
           <button className="p-[0.75rem] bg-slate-300 dark:bg-slate-700 duration-200 hover:bg-slate-400 dark:hover:bg-slate-500 rounded-xl"
             onClick = { () => {

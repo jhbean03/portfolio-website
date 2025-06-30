@@ -19,7 +19,7 @@ function ProjectBox({picture, title, date, skills, description, link, imgSide}: 
                     <div className="text-center"><b>Relevant Skills:</b> {skills}</div>
                     <div className="text-center mt-[1em]">
                         <p className="mb-[1em]">{description}</p>
-                        { link == "" ? "" : <p><a href={link} target="_blank" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">Project Repository</a></p>}
+                        { link === "" ? "" : <p><a href={link} target="_blank" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">Project Repository</a></p>}
                     </div>
                 </div>
                 { imgSide == "right" ? <img src={picture} className="rounded-4xl m-[2em] self-center"/> : "" }
@@ -32,9 +32,9 @@ function ProjectBox({picture, title, date, skills, description, link, imgSide}: 
                     <div className="text-center"><i>{date}</i></div>
                     <div className="text-center"><b>Relevant Skills:</b> {skills}</div>
                 </div>
-                <div className="text-center">
-                    <p className="mb-[0.5em]">{description}</p>
-                    <p><a href={link} target="_blank" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">Project Repository</a></p>
+                <div className="text-center mt-[1em]">
+                        <p className="mb-[1em]">{description}</p>
+                        { link === "" ? "" : <p><a href={link} target="_blank" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">Project Repository</a></p>}
                 </div>
             </div>
         </div>

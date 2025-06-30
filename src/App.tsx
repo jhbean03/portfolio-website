@@ -4,7 +4,6 @@ import About from './components/About.tsx'
 import Skills from './components/Skills.tsx'
 import Projects from './components/Projects.tsx'
 import Experience from './components/Experience.tsx'
-import Resume from './components/Resume.tsx'
 import { useState } from 'react'
 
 const getTheme = () => {
@@ -46,9 +45,6 @@ const App = () => {
       break;
     case "experience":
       page = <Experience />
-      break;
-    case "resume":
-      page = <Resume />
       break;
   }
 

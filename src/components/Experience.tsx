@@ -147,28 +147,61 @@ function Experience() {
     }
 
     return (
-        <div className="flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn scroll-smooth">
-            <h1 className="font-[Offside] text-[40px] text-center font-bold">Experience</h1>
-            <p className="text-center">
-                Below is a list of all the work experience I have related to computer science, programming, software development, and general engineering/mathematics education, as well 
-                as a list of all the <a href="#coursework" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I have completed at Ohio 
-                State while pursuing my Bachelors of Science in Computer Science and Engineering.
-            </p>
+        <div>
+            {/* Computer Display */}
+            <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn scroll-smooth">
+                <h1 className="font-[Offside] text-[40px] text-center font-bold">Experience</h1>
+                <p className="text-center">
+                    Below is a list of all the work experience I have related to computer science, programming, software development, and general engineering/mathematics education, as well 
+                    as a list of all the <a href="#coursework" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I have completed at Ohio 
+                    State while pursuing my Bachelors of Science in Computer Science and Engineering.
+                </p>
 
-            <h2 className="font-[Offside] text-[24px] text-center font-bold">Research and Internship Experience</h2>
-            <div className="flex flex-col gap-[2em]">
-                {renderWork(RESEARCH_INTERN_POSITIONS)}
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research and Internship Experience</h2>
+                <div className="flex flex-col gap-[2em]">
+                    {renderWork(RESEARCH_INTERN_POSITIONS)}
+                </div>
+
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Teaching Experience</h2>
+                <div className="flex flex-col gap-[2em]">
+                    {renderWork(TEACHING_POSITIONS)}
+                </div>
+
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Coursework</h2>
+                <h3 className="text-[18px] text-center font-bold">Cumulative GPA: 4.00/4.00</h3>
+                <div className="grid xl:grid-cols-2 max-xl:grid-cols-1 gap-[2em]">
+                    {renderSemesters()}
+                </div>
             </div>
 
-            <h2 className="font-[Offside] text-[24px] text-center font-bold">Teaching Experience</h2>
-            <div className="flex flex-col gap-[2em]">
-                {renderWork(TEACHING_POSITIONS)}
-            </div>
+            {/* Mobile Display */}
+            <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] ml-auto mr-auto animate-fadeIn p-[1.5em] scroll-smooth">
+                <h1 className="font-[Offside] text-[40px] text-center font-bold">Experience</h1>
+                <p className="text-center">
+                    Below is a list of all the work experience I have related to computer science, programming, software development, and general engineering/mathematics education, as well 
+                    as a list of all the <a href="#coursework-mobile" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I have completed at Ohio 
+                    State while pursuing my Bachelors of Science in Computer Science and Engineering.
+                </p>
 
-            <h2 className="font-[Offside] text-[24px] text-center font-bold">Coursework</h2>
-            <h3 className="text-[18px] text-center font-bold">Cumulative GPA: 4.00/4.00</h3>
-            <div className="grid xl:grid-cols-2 max-xl:grid-cols-1 gap-[2em]">
-                {renderSemesters()}
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research and Internship Experience</h2>
+                <div className="flex flex-col gap-[2em]">
+                    {renderWork(RESEARCH_INTERN_POSITIONS)}
+                </div>
+
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Teaching Experience</h2>
+                <div className="flex flex-col gap-[2em]">
+                    {renderWork(TEACHING_POSITIONS)}
+                </div>
+
+                <div className="mb-[2.5em]" id="coursework-mobile">
+                    <hr></hr>
+                </div>
+
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Coursework</h2>
+                <h3 className="text-[18px] text-center font-bold">Cumulative GPA: 4.00/4.00</h3>
+                <div className="grid xl:grid-cols-2 max-xl:grid-cols-1 gap-[2em]">
+                    {renderSemesters()}
+                </div>
             </div>
         </div>
     )

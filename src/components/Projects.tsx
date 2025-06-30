@@ -53,14 +53,29 @@ const renderProjects = () => {
 
 function Projects() {
     return (
-        <div className="flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
-            <h1 className="font-[Offside] text-[40px] text-center font-bold">Projects</h1>
-            <p className="text-center">
-                Below is a list of all of the projects I have completed related to programming and computer science. Note that some projects may not have a publicly available GitHub
-                repository if they were completed as a project for a class.
-            </p>
-            <div className="flex flex-col gap-[2em]">
-                {renderProjects()}
+        <div>
+            {/* Computer Display */}
+            <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
+                <h1 className="font-[Offside] text-[40px] text-center font-bold">Projects</h1>
+                <p className="text-center">
+                    Below is a list of all of the projects I have completed related to programming and computer science. Note that some projects may not have a publicly available GitHub
+                    repository if they were completed as a project for a class.
+                </p>
+                <div className="flex flex-col gap-[2em]">
+                    {renderProjects()}
+                </div>
+            </div>
+
+            {/* Mobile Display */}
+            <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] animate-fadeIn p-[1.5em]">
+                <h1 className="font-[Offside] text-[40px] text-center font-bold">Projects</h1>
+                <p className="text-center">
+                    Below is a list of all of the projects I have completed related to programming and computer science. Note that some projects may not have a publicly available GitHub
+                    repository if they were completed as a project for a class.
+                </p>
+                <div className="flex flex-col gap-[2em]">
+                    {renderProjects()}
+                </div>
             </div>
         </div>
     )
