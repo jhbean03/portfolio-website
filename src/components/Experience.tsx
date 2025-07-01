@@ -12,9 +12,8 @@ function Experience() {
         ]},
         {title: "Biomedical Informatics Researcher", department: "The Ohio State University Department of Biomedical Informatics", location: "Columbus, OH", 
             date: "May 2023 - August 2023", skills: "Machine Learning, Artificial Intelligence, Python, R, Health Data", descriptionPoints: [
-            "Worked with the Cognitive Systems Engineering Lab (CSEL) to develop two new contingency plans for UAMs",
-            "Developed C++ code to run more than 40 simulations that enacted parameter-determined flight pathing",
-            "Plotted results of simulations on six dynamic charts and graphs using Python with Pyplot Dash"
+            "Developed machine learning code in Python to read over one million instances of patient data from Google Cloud and classify outcomes with more than 80% accuracy",
+            "Analyzed code results using R and Python with Matplotlib and presented findings at a poster session with over 60 professors within the department in attendance"
         ]},
     ]
 
@@ -45,7 +44,7 @@ function Experience() {
         ]},
         {title: "Teaching Assistant (ENGR 1182)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "August 2023 - May 2024", 
             skills: "", descriptionPoints: [
-            "Worked as an undergraduate teaching assistant for ENGR 1182 (Fundamentals of Engineering II)",
+            "Worked as an undergraduate teaching assistant for Fundamentals of Engineering II (ENGR 1182)",
             "Provided important feedback on various graphics assignments and reports submitted by students, helping them to learn more about technical communication",
             "Graded assignments in a timely manner and helped students to understand the feedback received"
         ]},
@@ -157,7 +156,7 @@ function Experience() {
                     State while pursuing my Bachelors of Science in Computer Science and Engineering.
                 </p>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research and Internship Experience</h2>
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research Experience</h2>
                 <div className="flex flex-col gap-[2em]">
                     {renderWork(RESEARCH_INTERN_POSITIONS)}
                 </div>
@@ -183,7 +182,7 @@ function Experience() {
                     State while pursuing my Bachelors of Science in Computer Science and Engineering.
                 </p>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research and Internship Experience</h2>
+                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research Experience</h2>
                 <div className="flex flex-col gap-[2em]">
                     {renderWork(RESEARCH_INTERN_POSITIONS)}
                 </div>

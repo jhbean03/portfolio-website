@@ -9,9 +9,9 @@ import checkerImg from "../assets/checkers.png"
 
 const PROJECTS = [
     {picture: redesignedPortfolioImg, title: "Redesigned Portfolio Website", date: "June 2025 - Present", skills: "React, TypeScript, Tailwind CSS", 
-        description: "Starting in the summer of 2025, I began development of a new portfolio site that describes who I am as a person, what my career aspirations are"
+        description: "Starting in the summer of 2025, I began development of a new portfolio site that describes who I am as a person, what my career aspirations are "
         + "and any relevant projects I have completed during my time studying computer science. This portfolio was built using industry-standard tools such as React and Typescript, "
-        + "along with Tailwind CSS for ease of styling.", link: ""},
+        + "along with Tailwind CSS for ease of styling.", link: "https://github.com/jhbean03/portfolio-redesign"},
     {picture: apiImg, title: "Full-Stack Employee Skill Search", date: "March 2025 - May 2025", skills: "React, TypeScript, APIs, MongoDB, Tailwind CSS", 
         description: "Using Express.js and TypeScript, I constructed a backend with HTTPS routes to read and write information to a database I set up in MongoDB. "
         + "With React and TypeScript, I was then able to create a dynamic and easy-to-use interface for employee skill searching.", link: "https://github.com/jhbean03/FullStackAPI"},
@@ -33,7 +33,7 @@ const PROJECTS = [
         link: ""},
     {picture: checkerImg, title: "Fundamentals of Engineering Honors Software Design Project", date: "February 2022 - April 2022", skills: "C++, Makefile", 
         description: "As a part of Ohio State's First-Year Engineering course sequence, our first project was to build a software-based deliverable in the form of a game. I worked " 
-        + "with one other student and we both wrote the logic for the game itself, the AI opponent, and the board design, all of which was written in C++.", 
+        + "with one other student and we both wrote the logic for the game itself, an AI opponent, and the board design, all of which were written in C++.", 
         link: ""},
 ];
 
