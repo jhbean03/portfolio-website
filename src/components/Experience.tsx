@@ -52,19 +52,19 @@ function Experience() {
 
     const SEMESTERS = [
         {semesterName: "Spring 2026", courses: [
-            {number: "CSE 5911", name: "Capstone Design: Software Applications"},
-            {number: "CSE 5474", name: "Software Security"},
-            {number: "CSE 3321", name: "Automata and Formal Languages"},
-            {number: "MATH 4578", name: "Discrete Mathematical Models"},
+            {number: "MATH 5801", name: "General Topology and Knot Theory"},
             {number: "MATH 4581", name: "Abstract Algebra II"},
+            {number: "MATH 4557", name: "Partial Differential Equations"},
+            {number: "CSE 5914", name: "Capstone Design: Knowledge-Based Systems"},
+            {number: "CSE 3321", name: "Automata and Formal Languages"},
         ]},
         {semesterName: "Autumn 2025", courses: [
+            {number: "MATH 4580", name: "Abstract Algebra I"},
             {number: "CSE 3231", name: "Software Engineering Techniques"},
             {number: "CSE 3232", name: "Software Requirements Analysis"},
             {number: "CSE 3241", name: "Introduction to Database Systems"},
             {number: "CSE 3461", name: "Computer Networking and Internet Technologies"},
             {number: "CSE 3341", name: "Principles of Programming Languages"},
-            {number: "MATH 4580", name: "Abstract Algebra I"},
         ]},
         {semesterName: "Spring 2025", courses: [
             {number: "CSE 3901", name: "Project: Design, Development, and Documentation of Web Applications"},
