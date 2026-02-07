@@ -7,13 +7,14 @@ function About() {
                 <p>
                 As stated on the home page, I am currently working on getting my undergraduate degree (B.S.) in computer science and mathematics at THE Ohio State University, 
                 with a planned graduation date of May 2026. With this being said, I have learned a great deal from my time completing coursework and conducting research at Ohio State. 
-                I am deeply passionate about the ever-evolving field of software and web development and I am most intrigued in learning robust technologies that allow for better, more
-                accessible software.
+                I am deeply passionate about the ever-evolving field of data science and analytics, particularly with regard to how data can be used to provide important insights in
+                the fields of health, finance, and education.
                 </p>
                 <p>
                 I also have a deep interest in developing pedagogical methods to streamline education within mathematics, and I hope to start development on projects which will 
-                provide more targeted tools to students who may not have access to many resources for learning math in general. Some of the hobbies I enjoy doing during my free 
-                time are trying new and delicious food, weightlifting, running, playing video games, and reading. Feel free to look at some of the projects I have been working 
+                provide more targeted tools to students who may not have access to many resources for learning math in general. Additionally, I am fascinated in finding meaningful ways in
+                which the fields of computer science and mathematics interface with each other to develop important technologies. Some of the hobbies I enjoy doing during my free 
+                time are trying new and delicious food, walking, biking, playing video games, and reading. Feel free to look at some of the projects I have been working 
                 on and contact me with the info included on my resume!
                 </p>
             </div>
@@ -24,13 +25,14 @@ function About() {
                 <p>
                 As stated on the home page, I am currently working on getting my undergraduate degree (B.S.) in computer science and mathematics at THE Ohio State University, 
                 with a planned graduation date of May 2026. With this being said, I have learned a great deal from my time completing coursework and conducting research at Ohio State. 
-                I am deeply passionate about the ever-evolving field of software and web development and I am most intrigued in learning robust technologies that allow for better, more
-                accessible software.
+                I am deeply passionate about the ever-evolving field of data science and analytics, particularly with regard to how data can be used to provide important insights in
+                the fields of health, finance, and education.
                 </p>
                 <p>
                 I also have a deep interest in developing pedagogical methods to streamline education within mathematics, and I hope to start development on projects which will 
-                provide more targeted tools to students who may not have access to many resources for learning math in general. Some of the hobbies I enjoy doing during my free 
-                time are trying new and delicious food, weightlifting, running, playing video games, and reading. Feel free to look at some of the projects I have been working 
+                provide more targeted tools to students who may not have access to many resources for learning math in general. Additionally, I am fascinated in finding meaningful ways in
+                which the fields of computer science and mathematics interface with each other to develop important technologies. Some of the hobbies I enjoy doing during my free 
+                time are trying new and delicious food, walking, biking, playing video games, and reading. Feel free to look at some of the projects I have been working 
                 on and contact me with the info included on my resume!
                 </p>
             </div>

@@ -1,6 +1,6 @@
 import { FiMoon, FiSun } from "react-icons/fi";
 import { useState } from 'react';
-import resumePDF from '../assets/JacksonBean.pdf'
+import resumePDF from '../assets/Jackson_Bean.pdf'
 
 interface NavbarProps {
   theme: boolean
