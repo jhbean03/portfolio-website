@@ -3,7 +3,7 @@ function About() {
         <div>
             {/* Computer Display */}
             <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">About Me</h1>
+                <h1 className="font-head text-[40px] text-center font-bold">About Me</h1>
                 <p>
                 As stated on the home page, I am currently working on getting my undergraduate degree (B.S.) in computer science and mathematics at THE Ohio State University, 
                 with a planned graduation date of May 2026. With this being said, I have learned a great deal from my time completing coursework and conducting research at Ohio State. 
