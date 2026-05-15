@@ -4,49 +4,57 @@ import WorkBox from "./WorkBox.tsx"
 function Experience() {
 
     const RESEARCH_INTERN_POSITIONS = [
+        {title: "OSU Cycle Mentee", department: "The Ohio State University Department of Mathematics", location: "Columbus, OH", 
+            date: "September 2025 - April 2026", skills: "Python, Molecular Dynamics, Partial Differential Equations, Numerical Methods", descriptionPoints: [
+            "Analyzed symplectic, area-preserving numerical methods used to simulate interactions between two Argon atoms.",
+            "Studied modified and computational differential equations to represent complex, real-world Hamiltonian systems.",
+            "Developed a Python simulation which measured the energy conservation of general numerical methods against symplectic methods."
+        ]},
         {title: "Cognitive Systems Engineering Researcher", department: "The Ohio State University College of Industrial and Systems Engineering", location: "Columbus, OH", 
             date: "May 2024 - September 2024", skills: "C++, Visual Studio, Xcode, Python, Cognitive Systems Engineering", descriptionPoints: [
-            "Worked with the Cognitive Systems Engineering Lab (CSEL) to develop two new contingency plans for UAMs",
-            "Developed C++ code to run more than 40 simulations that enacted parameter-determined flight pathing",
-            "Plotted results of simulations on six dynamic charts and graphs using Python with Pyplot Dash"
+            "Integrated two new decision-making contingency plans designed for UAMs/UAVs in an urban airspace.",
+            "Developed C++ code to run 50 simulations that enacted parameter-determined decision-making.",
+            "Analyzed results of simulations using pandas and Pyplot Dash in Python to create six dynamic charts and graphs."
         ]},
         {title: "Biomedical Informatics Researcher", department: "The Ohio State University Department of Biomedical Informatics", location: "Columbus, OH", 
             date: "May 2023 - August 2023", skills: "Machine Learning, Artificial Intelligence, Python, R, Health Data", descriptionPoints: [
-            "Developed machine learning code in Python to read over one million instances of patient data from Google Cloud and classify outcomes with more than 80% accuracy",
-            "Analyzed code results using R and Python with Matplotlib and presented findings at a poster session with over 60 professors within the department in attendance"
+            "Constructed an AI model trained using gradient boosting, random forests, and SVMs with scikit-learn in Python that classified patient outcomes with more than 80% accuracy.",
+            "Utilized pandas and NumPy to efficiently access over one million instances of patient data for training.",
+            "Compared over 150 instances of training and test results using matplotlib in Python and presented findings at a departmental research forum."
         ]},
     ]
 
     const TEACHING_POSITIONS = [
-        {title: "Student Instructional Associate", department: "The Ohio State University College of Arts and Sciences", location: "Columbus, OH", date: "August 2024 - Present", 
+        {title: "Student Instructional Associate", department: "The Ohio State University College of Arts and Sciences", location: "Columbus, OH", date: "August 2024 - May 2026", 
             skills: "", descriptionPoints: [
-            "Teach Business Algebra twice a week to 72 students divided into two separate sections",
-            "Answer at least 20 weekly questions about course material in a concise and understandable manner",
-            "Prepare, grade, and proctor 10 weekly quizzes and four monthly exams over semester-long course content"
+            "Worked as a student instructional associate for College Algebra for Business (MATH 1130) and College Algebra (MATH 1148).",
+            "Prepared and taught recitation twice a week to over 70 students into two sections.",
+            "Answered over 20 questions each week about course material in a concise and understandable manner.",
+            "Graded and proctored 10 weekly quizzes and four monthly exams over semester-long course content."
         ]},
         {title: "Grader (CSE 2421)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "January 2025 - May 2025", 
             skills: "", descriptionPoints: [
-            "Worked as a grader for Systems I (CSE 2421)",
-            "Graded and provided feedback on student programming projects written in C and AT&T x86 assembly language",
-            "Held office hours twice a week to answer any questions from students and assist with completiton of programming projects"
+            "Worked as a grader for Systems I (CSE 2421).",
+            "Graded and provided feedback on student programming projects written in C and AT&T x86 assembly language.",
+            "Held office hours twice a week to answer any questions from students and assist with completiton of programming projects."
         ]},
         {title: "Teaching Assistant (ENGR 1282.01H)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "August 2024 - December 2024", 
             skills: "", descriptionPoints: [
-            "Worked as an undergraduate teaching assistant for Fundamentals of Engineering for Honors I Lab (ENGR 1282.01H)",
-            "Helped answer any questions students had with regard to the lab experiences both in-person and through email",
-            "Graded various forms of technical communication (lab reports, memos, abstracts) in a thorough and timely manner"
+            "Worked as an undergraduate teaching assistant for Fundamentals of Engineering for Honors I Lab (ENGR 1282.01H).",
+            "Helped answer any questions students had with regard to the lab experiences both in-person and through email.",
+            "Graded various forms of technical communication (lab reports, memos, abstracts) in a thorough and timely manner."
         ]},
         {title: "Grader (CSE 2231)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "May 2024 - August 2024", 
             skills: "", descriptionPoints: [
-            "Worked as a grader for Software II (CSE 2231)",
-            "Graded and provided feedback on student programming projects written in Java",
-            "Held office hours twice a week to answer any questions from students and assist with completiton of programming projects"
+            "Worked as a grader for Software II (CSE 2231).",
+            "Graded and provided feedback on student programming projects written in Java.",
+            "Held office hours twice a week to answer any questions from students and assist with completiton of programming projects."
         ]},
         {title: "Teaching Assistant (ENGR 1182)", department: "The Ohio State University College of Engineering", location: "Columbus, OH", date: "August 2023 - May 2024", 
             skills: "", descriptionPoints: [
-            "Worked as an undergraduate teaching assistant for Fundamentals of Engineering II (ENGR 1182)",
-            "Provided important feedback on various graphics assignments and reports submitted by students, helping them to learn more about technical communication",
-            "Graded assignments in a timely manner and helped students to understand the feedback received"
+            "Worked as an undergraduate teaching assistant for Fundamentals of Engineering II (ENGR 1182).",
+            "Provided important feedback on various graphics assignments and reports submitted by students, helping them to learn more about technical communication.",
+            "Graded assignments in a timely manner and helped students to understand the feedback received."
         ]},
     ]
 
@@ -148,25 +156,25 @@ function Experience() {
     return (
         <div>
             {/* Computer Display */}
-            <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn scroll-smooth">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">Experience</h1>
+            <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[2.5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn scroll-smooth">
+                <h1 className="font-head text-[40px] text-center font-bold">Experience</h1>
                 <p className="text-center">
-                    Below is a list of all the work experience I have related to computer science, programming, software development, and general engineering/mathematics education, as well 
-                    as a list of all the <a href="#coursework" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I have completed at Ohio 
-                    State while pursuing my Bachelors of Science in Computer Science and Engineering.
+                    Below is a list of all the work experience I have as well 
+                    as a list of all the <a href="#coursework" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I completed at Ohio 
+                    State while pursuing my B.S. in Computer Science and Engineering.
                 </p>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research Experience</h2>
+                <h2 className="font-head text-[24px] text-center font-bold">Research Experience</h2>
                 <div className="flex flex-col gap-[2em]">
                     {renderWork(RESEARCH_INTERN_POSITIONS)}
                 </div>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Teaching Experience</h2>
+                <h2 className="font-head text-[24px] text-center font-bold">Teaching Experience</h2>
                 <div className="flex flex-col gap-[2em]">
                     {renderWork(TEACHING_POSITIONS)}
                 </div>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Coursework</h2>
+                <h2 className="font-head text-[24px] mb-[-1em] text-center font-bold">Undergraduate Coursework</h2>
                 <h3 className="text-[18px] text-center font-bold">Cumulative GPA: 4.00/4.00</h3>
                 <div className="grid xl:grid-cols-2 max-xl:grid-cols-1 gap-[2em]">
                     {renderSemesters()}
@@ -175,28 +183,28 @@ function Experience() {
 
             {/* Mobile Display */}
             <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] ml-auto mr-auto animate-fadeIn p-[1.5em] scroll-smooth">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">Experience</h1>
+                <h1 className="font-head text-[40px] text-center font-bold">Experience</h1>
                 <p className="text-center">
-                    Below is a list of all the work experience I have related to computer science, programming, software development, and general engineering/mathematics education, as well 
-                    as a list of all the <a href="#coursework-mobile" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I have completed at Ohio 
-                    State while pursuing my Bachelors of Science in Computer Science and Engineering.
+                    Below is a list of all the work experience I have as well 
+                    as a list of all the <a href="#coursework" className="duration-200 text-blue-600 hover:text-blue-400 dark:text-blue-300">coursework</a> I completed at Ohio 
+                    State while pursuing my B.S. in Computer Science and Engineering.
                 </p>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Research Experience</h2>
+                <h2 className="font-head text-[24px] text-center font-bold">Research Experience</h2>
                 <div className="flex flex-col gap-[2em]">
                     {renderWork(RESEARCH_INTERN_POSITIONS)}
                 </div>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Teaching Experience</h2>
+                <h2 className="font-head text-[24px] text-center font-bold">Teaching Experience</h2>
                 <div className="flex flex-col gap-[2em]">
                     {renderWork(TEACHING_POSITIONS)}
                 </div>
 
-                <div className="mb-[2.5em]" id="coursework-mobile">
+                <div id="coursework-mobile">
                     <hr></hr>
                 </div>
 
-                <h2 className="font-[Offside] text-[24px] text-center font-bold">Coursework</h2>
+                <h2 className="font-head text-[24px] text-center font-bold">Undergraduate Coursework</h2>
                 <h3 className="text-[18px] text-center font-bold">Cumulative GPA: 4.00/4.00</h3>
                 <div className="grid xl:grid-cols-2 max-xl:grid-cols-1 gap-[2em]">
                     {renderSemesters()}

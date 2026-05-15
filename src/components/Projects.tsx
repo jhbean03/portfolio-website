@@ -60,7 +60,7 @@ function Projects() {
     return (
         <div>
             {/* Computer Display */}
-            <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
+            <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[2.5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
                 <h1 className="font-head text-[40px] text-center font-bold">Programming Projects</h1>
                 <p className="text-center">
                     Below is a list of all of the projects I have completed related to programming and computer science. Note that some projects may not have a publicly available GitHub
