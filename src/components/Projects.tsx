@@ -1,4 +1,5 @@
 import ProjectBox from "./ProjectBox.tsx"
+import capstoneImg from "../assets/capstone.png"
 import redesignedPortfolioImg from "../assets/redesignedPortfolio.png"
 import apiImg from "../assets/apiImg.png"
 import travelImg from "../assets/travelImg.png"
@@ -8,9 +9,13 @@ import robotImg from "../assets/robot.png"
 import checkerImg from "../assets/checkers.png"
 
 const PROJECTS = [
+    {picture: capstoneImg, title: "Senior Capstone Project: AisleBeReady", date: "January 2026 - April 2026", skills: "React, JavaScript, Python, Elasticsearch, Docker", 
+        description: "For my senior capstone project, I worked with a group of five other students to develop a web-based application that takes a URL to an online "
+        + "recipe and generates a grocery list with the ingredients required to make the recipe. I utilized React and JavaScript to help build the frontend and used Python to "
+        + "help construct the web scraping script to obtain the ingredients for a given recipe.", link: ""},
     {picture: redesignedPortfolioImg, title: "Redesigned Portfolio Website", date: "June 2025 - Present", skills: "React, TypeScript, Tailwind CSS", 
         description: "Starting in the summer of 2025, I began development of a new portfolio site that describes who I am as a person, what my career aspirations are "
-        + "and any relevant projects I have completed during my time studying computer science. This portfolio was built using industry-standard tools such as React and Typescript, "
+        + "and any relevant projects I have completed during my time studying computer science. This portfolio was built using industry-standard tools such as React and TypeScript, "
         + "along with Tailwind CSS for ease of styling.", link: "https://github.com/jhbean03/portfolio-redesign"},
     {picture: apiImg, title: "Full-Stack Employee Skill Search", date: "March 2025 - May 2025", skills: "React, TypeScript, APIs, MongoDB, Tailwind CSS", 
         description: "Using Express.js and TypeScript, I constructed a backend with HTTPS routes to read and write information to a database I set up in MongoDB. "
@@ -56,7 +61,7 @@ function Projects() {
         <div>
             {/* Computer Display */}
             <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">Projects</h1>
+                <h1 className="font-head text-[40px] text-center font-bold">Programming Projects</h1>
                 <p className="text-center">
                     Below is a list of all of the projects I have completed related to programming and computer science. Note that some projects may not have a publicly available GitHub
                     repository if they were completed as a project for a class.
@@ -68,7 +73,7 @@ function Projects() {
 
             {/* Mobile Display */}
             <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] animate-fadeIn p-[1.5em]">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">Projects</h1>
+                <h1 className="font-head text-[40px] text-center font-bold">Programming Projects</h1>
                 <p className="text-center">
                     Below is a list of all of the projects I have completed related to programming and computer science. Note that some projects may not have a publicly available GitHub
                     repository if they were completed as a project for a class.

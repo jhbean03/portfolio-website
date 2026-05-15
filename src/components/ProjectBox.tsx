@@ -14,7 +14,7 @@ function ProjectBox({picture, title, date, skills, description, link, imgSide}: 
             <div className="grid grid-cols-2 gap-[1em] max-xl:hidden bg-slate-300 dark:bg-slate-700 p-[1em] rounded-4xl justify-items-center items-center">
                 { imgSide == "left" ? <img src={picture} className="rounded-4xl m-[2em] self-center"/> : "" }
                 <div className="pb-0">
-                    <h2 className="font-[Offside] text-[24px] text-center font-bold p-0">{title}</h2>
+                    <h2 className="font-head text-[24px] text-center font-bold p-0">{title}</h2>
                     <div className="text-center"><i>{date}</i></div>
                     <div className="text-center"><b>Relevant Skills:</b> {skills}</div>
                     <div className="text-center mt-[1em]">
@@ -28,7 +28,7 @@ function ProjectBox({picture, title, date, skills, description, link, imgSide}: 
             <div className="xl:hidden grid grid-cols-1 gap-[1em] bg-slate-300 dark:bg-slate-700 p-[1em] rounded-4xl justify-items-center items-center">
                 <img src={picture} className="row-span-2 rounded-4xl"/>
                 <div>
-                    <h2 className="font-[Offside] text-[24px] text-center font-bold p-0">{title}</h2>
+                    <h2 className="font-head text-[24px] text-center font-bold p-0">{title}</h2>
                     <div className="text-center"><i>{date}</i></div>
                     <div className="text-center"><b>Relevant Skills:</b> {skills}</div>
                 </div>
