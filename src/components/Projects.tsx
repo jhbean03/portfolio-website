@@ -31,7 +31,7 @@ const PROJECTS = [
         description: "As a part of Ohio State's First-Year Engineering course sequence, our second project was to build a robot capable of carrying out a given list of tasks, such "
         + "as moving an item or flipping a switch. I worked with a group of three other students and I was in charge of writing a majority of the code for the robot, which was in C++.", 
         link: ""},
-    {picture: checkerImg, title: "Fundamentals of Engineering Honors Software Design Project", date: "February 2022 - April 2022", skills: "C++, Makefile", 
+    {picture: checkerImg, title: "Fundamentals of Engineering Honors Software Design Project", date: "December 2021", skills: "C++, Makefile", 
         description: "As a part of Ohio State's First-Year Engineering course sequence, our first project was to build a software-based deliverable in the form of a game. I worked " 
         + "with one other student and we both wrote the logic for the game itself, an AI opponent, and the board design, all of which were written in C++.", 
         link: ""},

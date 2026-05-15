@@ -34,6 +34,9 @@ function Home() {
                         double-majored in theoretical mathematics!
                         This is my portfolio website which contains information about my professional goals, my personal interests, my skills, some of the research and projects I am
                         currently working on and have worked on in the past, and coursework I have completed. The latest versions of my resume and CV are included as well if you would
+                        Hi! My name is Jackson, and I am a Computer Science & Engineering (CSE) and Theoretical Mathematics undergraduate at THE Ohio State University!
+                        This is my portfolio website which contains information about my professional goals, my personal interests, my skills, some of the projects I am
+                        currently working on and have worked on in the past, and coursework I have completed. The latest version of my resume is included as well if you would
                         like to contact me with any questions regarding my work!
                     </p>
                     <div className="flex flex-row gap-[2em] justify-center">
