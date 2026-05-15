@@ -13,9 +13,19 @@ import x86Logo from '../assets/x86.png'
 import rubyLogo from '../assets/ruby.png'
 import railsLogo from '../assets/rails.png'
 import matlabLogo from '../assets/matlab.png'
+import mongodbLogo from '../assets/mongodb.png'
+import sqlLogo from '../assets/sqlite.png'
+import scikitLogo from '../assets/scikit.png'
+import pandasLogo from '../assets/pandas.png'
+import matplotlibLogo from '../assets/matplotlib.png'
 import SkillBox from './SkillBox.tsx'
 
 const LANGS = [
+    {icon: pythonLogo, text: "Python"},
+    {icon: sqlLogo, text: "SQLite"},
+    {icon: scikitLogo, text: "scikit-learn"},
+    {icon: pandasLogo, text: "pandas"},
+    {icon: matplotlibLogo, text: "Matplotlib"},
     {icon: reactLogo, text: "React"},
     {icon: typescriptLogo, text: "TypeScript"},
     {icon: javascriptLogo, text: "JavaScript"},
@@ -26,11 +36,11 @@ const LANGS = [
     {icon: cLogo, text: "C"},
     {icon: cppLogo, text: "C++"},
     {icon: gitLogo, text: "Git"},
-    {icon: pythonLogo, text: "Python"},
+    {icon: matlabLogo, text: "MATLAB"},
+    {icon: mongodbLogo, text: "MongoDB"},
     {icon: x86Logo, text: "x86 Assembly"},
     {icon: rubyLogo, text: "Ruby"},
     {icon: railsLogo, text: "Rails"},
-    {icon: matlabLogo, text: "MATLAB"},
 ];
 
 const SKILLS = [
@@ -52,14 +62,24 @@ const SKILLS = [
     "Gel Electrophoresis",
     "Health Data Management",
     "Jupyter Notebook (with Ohio Supercomputer)",
-    "Total Internal Reflection Fluorescence (TIRF) Microscopy",
     "XML",
     "RSS",
     "Linux/UNIX",
     "Digital Circuits",
     "Analog Circuits",
     "Personal Computer Building",
-    "Makefile"
+    "Makefile",
+    "LaTeX",
+    "Artificial Intelligence",
+    "Software Requirements Analysis",
+    "Software Development Life Cycle (SDLC)",
+    "Abstract Algebra",
+    "Real Analysis",
+    "Topology",
+    "Knot Theory",
+    "Partial Differential Equations",
+    "Graph Theory",
+    "Combinatorics"
 ];
 
 const renderLangs = () => {
