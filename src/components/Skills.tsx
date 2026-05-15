@@ -79,7 +79,7 @@ const SKILLS = [
     "Knot Theory",
     "Partial Differential Equations",
     "Graph Theory",
-    "Combinatorics"
+    "Complexity Theory"
 ];
 
 const renderLangs = () => {

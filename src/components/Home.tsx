@@ -25,7 +25,7 @@ function Home() {
             </div>
 
             {/* Mobile Display */}
-            <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] ml-auto mr-auto animate-fadeIn">
+            <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 w-[100%] ml-auto mr-auto animate-fadeIn">
                 <img src={portrait} className="h-[27rem] w-auto object-cover"/>
                 <div className="flex flex-col gap-[2em] p-[1em]">
                     <h1 className="font-head text-[40px] text-center font-bold">Welcome!</h1>

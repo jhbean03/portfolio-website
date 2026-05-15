@@ -11,7 +11,7 @@ import checkerImg from "../assets/checkers.png"
 const PROJECTS = [
     {picture: capstoneImg, title: "Senior Capstone Project: AisleBeReady", date: "January 2026 - April 2026", skills: "React, JavaScript, Python, Elasticsearch, Docker", 
         description: "For my senior capstone project, I worked with a group of five other students to develop a web-based application that takes a URL to an online "
-        + "recipe and generates a grocery list with the ingredients required to make the recipe. I utilized React and JavaScript to help build the frontend and used Python to "
+        + "recipe and generates a grocery list with the ingredients required to make the recipe. I utilized React and JavaScript to help build the frontend and Python to "
         + "help construct the web scraping script to obtain the ingredients for a given recipe.", link: ""},
     {picture: redesignedPortfolioImg, title: "Redesigned Portfolio Website", date: "June 2025 - Present", skills: "React, TypeScript, Tailwind CSS", 
         description: "Starting in the summer of 2025, I began development of a new portfolio site that describes who I am as a person, what my career aspirations are "

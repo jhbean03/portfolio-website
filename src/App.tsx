@@ -49,8 +49,9 @@ const App = () => {
   }
 
   return (
-    <div className={`${theme ? "" : "dark"} text-[20px] overflow-x-clip`}>
+    <div className={`${theme ? "" : "dark"} text-[20px] overflow-x-clip bg-cover bg-center min-h-screen w-full`}>
       <Navbar theme={theme} setTheme={setTheme} setInfo={setInfo}/>
+      <div className="fixed inset-0 z-[-1] lg:bg-[url('./assets/mainBackground.jpg')] bg-cover opacity-10"></div>
       {page}
     </div>
   )
