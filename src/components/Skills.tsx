@@ -83,15 +83,15 @@ function Skills() {
         <div>
             {/* Computer Display */}
             <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">Skills</h1>
+                <h1 className="font-head text-[40px] text-center font-bold">Skills</h1>
                 <p className="text-center">
-                    Below is a list of relevant skills, tools, and programming languages I have used throughout my various projects and coursework.
+                    Below is a list of relevant skills, tools, and programming languages I have used throughout my projects, research, and coursework.
                 </p>
-                <h2 className="font-[Offside] text-[24px] text-center font-bold pt-[1em]">Programming Languages, Libraries, and Frameworks</h2>
-                <div className="flex flex-row flex-wrap gap-[2em] justify-center font-[Offside]">
+                <h2 className="font-head text-[24px] text-center font-bold pt-[1em]">Programming Languages, Libraries, and Frameworks</h2>
+                <div className="flex flex-row flex-wrap gap-[2em] justify-center font-head">
                     {renderLangs()}
                 </div>
-                <h2 className="font-[Offside] text-[24px] text-center font-bold pt-[1em]">General Skills</h2>
+                <h2 className="font-head text-[24px] text-center font-bold pt-[1em]">General Skills</h2>
                 <div className="grid grid-cols-3 max-lg:grid-cols-1 justify-items-center">
                     {renderSkills()}
                 </div>
@@ -99,15 +99,15 @@ function Skills() {
 
             {/* Mobile Display */}
             <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] ml-auto mr-auto animate-fadeIn p-[1.5em]">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">Skills</h1>
+                <h1 className="font-head text-[40px] text-center font-bold">Skills</h1>
                 <p className="text-center">
-                    Below is a list of relevant skills, tools, and programming languages I have used throughout my various projects and coursework.
+                    Below is a list of relevant skills, tools, and programming languages I have used throughout my projects, research, and coursework.
                 </p>
-                <h2 className="font-[Offside] text-[24px] text-center font-bold pt-[1em]">Programming Languages, Libraries, and Frameworks</h2>
-                <div className="flex flex-row flex-wrap gap-[2em] justify-center font-[Offside]">
+                <h2 className="font-head text-[24px] text-center font-bold pt-[1em]">Programming Languages, Libraries, and Frameworks</h2>
+                <div className="flex flex-row flex-wrap gap-[2em] justify-center font-head">
                     {renderLangs()}
                 </div>
-                <h2 className="font-[Offside] text-[24px] text-center font-bold pt-[1em]">General Skills</h2>
+                <h2 className="font-head text-[24px] text-center font-bold pt-[1em]">General Skills</h2>
                 <div className="grid grid-cols-3 max-lg:grid-cols-1 justify-items-center">
                     {renderSkills()}
                 </div>

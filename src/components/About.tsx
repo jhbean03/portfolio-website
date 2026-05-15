@@ -4,36 +4,52 @@ function About() {
             {/* Computer Display */}
             <div className="max-lg:hidden flex flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-200 dark:bg-slate-800 w-[70%] ml-auto mr-auto mt-[5em] mb-[5em] rounded-4xl p-[2em] animate-fadeIn">
                 <h1 className="font-head text-[40px] text-center font-bold">About Me</h1>
-                <p>
-                As stated on the home page, I am currently working on getting my undergraduate degree (B.S.) in computer science and mathematics at THE Ohio State University, 
-                with a planned graduation date of May 2026. With this being said, I have learned a great deal from my time completing coursework and conducting research at Ohio State. 
-                I am deeply passionate about the ever-evolving field of data science and analytics, particularly with regard to how data can be used to provide important insights in
-                the fields of health, finance, and education.
+                <p><q><i>
+                As long as a branch of science offers an abundance of problems, so long it is alive; a lack of problems foreshadows extinction or the cessation of independent development.
+                </i></q></p>
+                <p className="text-right mt-[-2em]">
+                David Hilbert, 1900
                 </p>
                 <p>
-                I also have a deep interest in developing pedagogical methods to streamline education within mathematics, and I hope to start development on projects which will 
-                provide more targeted tools to students who may not have access to many resources for learning math in general. Additionally, I am fascinated in finding meaningful ways in
-                which the fields of computer science and mathematics interface with each other to develop important technologies. Some of the hobbies I enjoy doing during my free 
-                time are trying new and delicious food, walking, biking, playing video games, and reading. Feel free to look at some of the projects I have been working 
-                on and contact me with the info included on my resume!
+                Having recently finished my B.S. in Computer Science and Engineering (CSE) from THE Ohio State University, I am currently interested in applying my software engineering,
+                programming, and mathematical skills to problems in <b>data science and machine learning</b>. Particularly, I find building models for pattern recognition in real-world data
+                extremely interesting and informative!
+                </p>
+                <p>
+                As for research, I am currently interested in <b>computability and complexity theory</b>. During my coursework in data structures, algorithms, and computability theory,
+                I discovered that this field develops from an elegant intersection between both theoretical mathematics and programmatic logic; two areas I thoroughly enjoyed all throughout
+                my eductation. As quantum computing opens thousands of doors in the realm of computer science, I find that complexity theory is an extraordinarily powerful tool which can lead us
+                towards revolutionary ideas pertaining to the algorithms we use on a daily basis.
+                </p>
+                <p>
+                Aside from my professional aspirations and interests, I enjoy reading books, recreational mathematics, going for hikes, playing video games, and trying new and delicious
+                foods!
                 </p>
             </div>
 
             {/* Mobile Display */}
             <div className="lg:hidden flex 2xl:flex-row flex-col gap-[2em] text-black dark:text-slate-200 bg-slate-100 dark:bg-slate-900 w-[100%] ml-auto mr-auto animate-fadeIn p-[1.5em]">
-                <h1 className="font-[Offside] text-[40px] text-center font-bold">About Me</h1>
-                <p>
-                As stated on the home page, I am currently working on getting my undergraduate degree (B.S.) in computer science and mathematics at THE Ohio State University, 
-                with a planned graduation date of May 2026. With this being said, I have learned a great deal from my time completing coursework and conducting research at Ohio State. 
-                I am deeply passionate about the ever-evolving field of data science and analytics, particularly with regard to how data can be used to provide important insights in
-                the fields of health, finance, and education.
+                <h1 className="font-head text-[40px] text-center font-bold">About Me</h1>
+                <p><q><i>
+                As long as a branch of science offers an abundance of problems, so long it is alive; a lack of problems foreshadows extinction or the cessation of independent development.
+                </i></q></p>
+                <p className="text-right mt-[-2em]">
+                David Hilbert, 1900
                 </p>
                 <p>
-                I also have a deep interest in developing pedagogical methods to streamline education within mathematics, and I hope to start development on projects which will 
-                provide more targeted tools to students who may not have access to many resources for learning math in general. Additionally, I am fascinated in finding meaningful ways in
-                which the fields of computer science and mathematics interface with each other to develop important technologies. Some of the hobbies I enjoy doing during my free 
-                time are trying new and delicious food, walking, biking, playing video games, and reading. Feel free to look at some of the projects I have been working 
-                on and contact me with the info included on my resume!
+                Having recently finished my B.S. in Computer Science and Engineering (CSE) from THE Ohio State University, I am currently interested in applying my software engineering,
+                programming, and mathematical skills to problems in <b>data science and machine learning</b>. Particularly, I find building models for pattern recognition in real-world data
+                extremely interesting and informative!
+                </p>
+                <p>
+                As for research, I am currently interested in <b>computability and complexity theory</b>. During my coursework in data structures, algorithms, and computability theory,
+                I discovered that this field develops from an elegant intersection between both theoretical mathematics and programmatic logic; two areas I thoroughly enjoyed all throughout
+                my eductation. As quantum computing opens thousands of doors in the realm of computer science, I find that complexity theory is an extraordinarily powerful tool which can lead us
+                towards revolutionary ideas pertaining to the algorithms we use on a daily basis.
+                </p>
+                <p>
+                Aside from my professional aspirations and interests, I enjoy reading books, recreational mathematics, going for hikes, playing video games, and trying new and delicious
+                foods!
                 </p>
             </div>
 
