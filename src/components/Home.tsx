@@ -1,4 +1,4 @@
-import portrait from '../assets/jackson.jpeg';
+import portrait from '../assets/jackson.jpg';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
